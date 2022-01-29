@@ -1,0 +1,24 @@
+{
+  "type": "record",
+  "name": "Event",
+  "namespace": "com.example.kafka.event",
+  "fields": [
+    {
+      "name": "event_id",
+      "type": "string"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "timestamp",
+      "type": "long",
+      "logicalType": "time-millis"
+    },
+    {
+      "name": "body",
+      "type": "string"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+Created topic Order.
+Topic: Order	TopicId: Fw43hF4wSdaUE3Li4y-n-w	PartitionCount: 1	ReplicationFactor: 1	Configs: segment.bytes=1073741824
+	Topic: Order	Partition: 0	Leader: 0	Replicas: 0	Isr: 0
+Topic: OrderConfirmed	TopicId: UvEAL5KYQ5igtPzuROBWQA	PartitionCount: 1	ReplicationFactor: 1	Configs: segment.bytes=1073741824
+	Topic: OrderConfirmed	Partition: 0	Leader: 0	Replicas: 0	Isr: 0
+Topic: OrderPacked	TopicId: 8ottAPevQWCvI5kRmxygjw	PartitionCount: 1	ReplicationFactor: 1	Configs: segment.bytes=1073741824
+	Topic: OrderPacked	Partition: 0	Leader: 0	Replicas: 0	Isr: 0
+Topic: Notification	TopicId: 6CFXKPmZQYWKc5VnTjrd0w	PartitionCount: 1	ReplicationFactor: 1	Configs: segment.bytes=1073741824
+	Topic: Notification	Partition: 0	Leader: 0	Replicas: 0	Isr: 0
+Topic: Error	TopicId: AxIFuGrpQcSm05gRnl23UA	PartitionCount: 1	ReplicationFactor: 1	Configs: segment.bytes=1073741824
+	Topic: Error	Partition: 0	Leader: 0	Replicas: 0	Isr: 0
+modify retention of topic Orders
+Completed updating config for topic Order.
+Topic: Order	TopicId: Fw43hF4wSdaUE3Li4y-n-w	PartitionCount: 1	ReplicationFactor: 1	Configs: segment.bytes=1073741824,retention.ms=259200000
+	Topic: Order	Partition: 0	Leader: 0	Replicas: 0	Isr: 0
