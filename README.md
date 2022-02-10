@@ -8,7 +8,9 @@ The 'Assignment1.sh' script contains all the steps to create the topics.
 
 ## Milestone 2
 Files submitted for milestone2 are located under the milestone2 dir.
+
 The 'service' dir contains a simple web service with only a dummy health check.
+
 The 'producer' dir contains a kafka producer to send 3 orders to the 'OrderReceived' topic.
 
 
