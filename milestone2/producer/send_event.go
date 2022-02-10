@@ -1,9 +1,18 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"github.com/confluentinc/confluent-kafka-go/kafka"
+	"time"
 )
+
+type Order struct {
+	Id int64 `json:"id"`
+	Name string	`json:"name"`
+	Timestamp int64	`json:"timestamp"`
+	Body string	`json:"body"`
+}
 
 func main() {
 
@@ -33,10 +42,20 @@ func main() {
 
 	// Produce messages to topic (asynchronously)
 	topic := "OrderReceived"
-	for _, word := range []string{"Welcome", "to", "the", "Confluent", "Kafka", "Golang", "client"} {
+	orders := []Order {
+		Order{1, "order1", time.Now().UnixMilli(), "order1 details"},
+		Order{2, "order2", time.Now().UnixMilli(), "order2 details"},
+		Order{3, "order2", time.Now().UnixMilli(), "order3 details"},
+	}
+	for _, order := range orders {
+		message, err := json.Marshal(order)
+		if err != nil {
+			fmt.Println("Marshaling failed for order", order.Id)
+			continue
+		}
 		p.Produce(&kafka.Message{
 			TopicPartition: kafka.TopicPartition{Topic: &topic, Partition: kafka.PartitionAny},
-			Value:          []byte(word),
+			Value:          message,
 		}, nil)
 	}
 
