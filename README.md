@@ -13,5 +13,9 @@ The 'service' dir contains a simple web service with only a dummy health check.
 
 The 'producer' dir contains a kafka producer to send 3 orders to the 'OrderReceived' topic.
 
+## Milestone 3
+Files submitted for milestone3 are located under the milestone3 dir.
+
+
 
 
