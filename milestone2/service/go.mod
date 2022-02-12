@@ -1,4 +1,4 @@
-module milestone2/service
+module github.com/jiunjiunma/manning-async-kafka/milestone2/service
 
 go 1.17
 

@@ -1,4 +1,4 @@
-module milestone2/producer
+module github.com/jiunjiunma/manning-async-kafka/milestone2/producer
 
 go 1.17
 
